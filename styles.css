@@ -1,0 +1,25 @@
+#main {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+  text-align: center;
+}
+#main:hover {
+  color: rgb(11, 135, 42);
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+#start:hover {
+  color: rgb(11, 135, 42);
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+button:hover {
+  background-color: green;
+  color: white;
+}
+nav :hover {
+  color: #db0e30;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
