@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form with Cards</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    margin:0;
+    padding:30px;
+    font-family:Arial, sans-serif;
+    background:white;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* Login Form */
+.login-box{
+    width:400px;
+    border:2px solid black;
+    padding:20px;
+    text-align:center;
+    background:white;
+}
+
+input{
+    width:300px;
+    padding:10px;
+}
+
+button{
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+/* Cards */
+.cards{
+    width:90%;
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    border:2px solid #333;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+    background:#f5f5f5;
+    transition:0.3s;
+}
+
+.card:hover{
+    background:#d9f3ff;
+    transform:translateY(-5px);
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    body{
+        background:gray;
+    }
+
+    .login-box{
+        width:90%;
+    }
+
+    input{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Login Form -->
+    <div class="login-box">
+        <h1>Login Form</h1>
+
+        <form>
+            <label>Username</label><br>
+            <input type="text" placeholder="Enter Username"><br><br>
+
+            <label>Password</label><br>
+            <input type="password" placeholder="Enter Password"><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Cards -->
+    <div class="cards">
+
+        <div class="card">
+            <h3>Software Developer</h3>
+            <p>Develop and maintain software applications.</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Designer</h3>
+            <p>Create attractive and responsive websites.</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Analyst</h3>
+            <p>Analyze data to support business decisions.</p>
+        </div>
+
+        <div class="card">
+            <h3>UI/UX Designer</h3>
+            <p>Design user-friendly interfaces and experiences.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cloud Engineer</h3>
+            <p>Manage cloud infrastructure and deployments.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cyber Security</h3>
+            <p>Protect systems and networks from cyber threats.</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
